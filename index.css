@@ -4,6 +4,152 @@
     box-sizing: border-box;
 }
 
-div h1{
-    color: green;
+/* <<<header section>>> */
+.nav{
+    /* border: 1px solid rgb(206, 205, 205); */
+    /* display: flex; */
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 700;
+}
+
+.dropdown:hover .dropdown-menu {
+    border-top: 3px solid #000e42;
+    margin-top: 21px;
+    width: 250px;
+    display: block;
+    box-shadow: 1px 1px 4px 1px rgba(128, 128, 128, 0.151);
+    transition: 1.5s;
+}
+.navbar i{
+    display: none;
+}
+
+/* <<<CSS for tab screen>>> */
+@media only screen and (max-width:980px){
+    .navbar i{
+        display: block;
+    }
+    .navbar ul{
+        top: 0;
+        background: white;
+        display: none;
+        /* right: 20px; */
+        margin-left: 140px;
+        width: 700px;
+        padding-top: 50px;
+        position: fixed;
+        height: 100vh;
+        z-index: 2px;
+        transition: right0.5s;
+    }
+
+    .navbar ul i{
+        position: absolute;
+        top: 15px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .navbar ul li{
+        display: block;
+        margin: 25px;
+    }
+    .navbar ul li{
+        display: block;
+    }
+
+    .first-section{
+        display: flex;
+        background-color: rgb(253, 249, 242);
+    }
+    .first-section h1{
+        font-size: 4em;
+        font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+        color: #000e42;
+        padding-left: 140px;
+        padding-top: 75px;
+        font-weight: 800;
+    }
+    .first-section p{
+        font-weight: 550;
+        /* font-size: 0.8em; */
+        font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+        padding-left: 140px;
+        opacity: 80%;
+    }
+    .image{
+        /* flex-wrap: nowrap; */
+        
+    }
+    button{
+        width: 130px;
+        height: 55px;
+        /* border-radius: 30px; */
+        /* margin-left: 140px; */
+        background-color: #011f8a;
+        color: white;
+        font-weight: 600;
+        border: none;
+    }
+    
+    /* <<<second section>>> */
+    .second-section h1{
+        font-weight: 650;
+        font-size: 3em;
+        color: #000e42;
+        padding-left: 140px;
+        padding-top: 51px;
+    }
+}
+
+
+/* <<<first section>>> */
+
+.first-section{
+    display: flex;
+    background-color: rgb(255, 253, 249);
+}
+.first-section h1{
+    font-size: 4em;
+    font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+    color: #000e42;
+    padding-left: 140px;
+    padding-top: 75px;
+    font-weight: 800;
+}
+.first-section p{
+    font-weight: 550;
+    /* font-size: 0.8em; */
+    font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+    padding-left: 140px;
+    opacity: 80%;
+}
+button{
+    width: 130px;
+    height: 55px;
+    /* border-radius: 30px; */
+    /* margin-left: 140px; */
+    background-color: #011f8a;
+    color: white;
+    font-weight: 600;
+    border: none;
+}
+
+/* <<<second section>>> */
+.second-section h1{
+    font-weight: 600;
+    font-size: 3em;
+    color: #000e42;
+    padding-left: 140px;
+    padding-top: 51px;
+}
+.image-section{
+    /* display: block; */
+    display: flex;
+    gap: 7%;
+    justify-content: center;
+}
+.text-under-img{
+    font-weight: 700;
+    justify-content: center;
 }
