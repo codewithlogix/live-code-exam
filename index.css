@@ -6,27 +6,110 @@
 
 /* <<<header section>>> */
 .nav{
-    /* border: 1px solid rgb(206, 205, 205); */
-    /* display: flex; */
     justify-content: space-around;
     align-items: center;
     font-weight: 700;
+    background-color: white;
 }
 
 .dropdown:hover .dropdown-menu {
     border-top: 3px solid #000e42;
-    margin-top: 21px;
+    /* margin-top: 21px; */
     width: 250px;
     display: block;
     box-shadow: 1px 1px 4px 1px rgba(128, 128, 128, 0.151);
-    transition: 1.5s;
+    /* transition: 0.5s; */
 }
 .navbar i{
     display: none;
 }
 
+/* <<<first section>>> */
+
+.first-section{
+    display: flex;
+    padding-top: 80px;
+    background-color: rgb(255, 253, 249);
+}
+.first-section h1{
+    font-size: 3.8em;
+    font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+    color: #000e42;
+    padding-left: 130px;
+    padding-top: 75px;
+    font-weight: 800;
+}
+.first-section p{
+    font-weight: 550;
+    /* font-size: 0.8em; */
+    font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+    padding-left: 140px;
+    opacity: 80%;
+}
+button{
+    width: 130px;
+    height: 55px;
+    /* border-radius: 30px; */
+    /* margin-left: 140px; */
+    background-color: #011f8a;
+    color: white;
+    font-weight: 600;
+    border: none;
+}
+
+/* <<<second section>>> */
+.second-section h1{
+    font-weight: 600;
+    font-size: 3em;
+    color: #000e42;
+    padding-left: 140px;
+    padding-top: 51px;
+}
+.image-section{
+    display: flex;
+    gap: 7%;
+    margin-right: 30px;
+    justify-content: center;
+    
+}
+
+.cards{
+    /* display: flex; */
+    margin-left: 120px;
+    gap: 5%;
+    margin-top: 5px;
+    border: none;
+    color: #000e42;
+}
+
+/* <<<courses>>> */
+.courses{
+    margin-left: 130px;
+    /* gap: 1%; */
+    /* background-color:aquamarine; */
+}
+.courses h6{
+    font-size: 1.1em;
+    line-height: 39px;
+    border-bottom: 1px solid rgb(71, 71, 255);
+}
+.top-courses{
+    margin-left: 130px;
+    margin-top: 130px;
+    font-weight: 600;
+}
+.our-alumni{
+    display: block;
+    margin-top: 200px;
+    margin-left: 130px;
+}
+.take-a-tour{
+    background-color: gradient(120deg, rgba(0, 4, 66, 0) 0%, #000442 90%),;
+    /* padding-top: -500px; */
+}
+
 /* <<<CSS for tab screen>>> */
-@media only screen and (max-width:980px){
+/* @media only screen and (max-width:980px){ */
     .navbar i{
         display: block;
     }
@@ -100,56 +183,3 @@
         padding-left: 140px;
         padding-top: 51px;
     }
-}
-
-
-/* <<<first section>>> */
-
-.first-section{
-    display: flex;
-    background-color: rgb(255, 253, 249);
-}
-.first-section h1{
-    font-size: 4em;
-    font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
-    color: #000e42;
-    padding-left: 140px;
-    padding-top: 75px;
-    font-weight: 800;
-}
-.first-section p{
-    font-weight: 550;
-    /* font-size: 0.8em; */
-    font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
-    padding-left: 140px;
-    opacity: 80%;
-}
-button{
-    width: 130px;
-    height: 55px;
-    /* border-radius: 30px; */
-    /* margin-left: 140px; */
-    background-color: #011f8a;
-    color: white;
-    font-weight: 600;
-    border: none;
-}
-
-/* <<<second section>>> */
-.second-section h1{
-    font-weight: 600;
-    font-size: 3em;
-    color: #000e42;
-    padding-left: 140px;
-    padding-top: 51px;
-}
-.image-section{
-    /* display: block; */
-    display: flex;
-    gap: 7%;
-    justify-content: center;
-}
-.text-under-img{
-    font-weight: 700;
-    justify-content: center;
-}
